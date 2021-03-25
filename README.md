@@ -27,7 +27,7 @@ As some of the original images are two big, another lighter preprocessed version
 ![Example3](/examples/imgs/ex3.jpg)
 
 ## Detection task
-For this task, we used [fizyr's implementation of RetinaNet](https://github.com/fizyr/keras-retinanet) and [martinzlocha's anchor optimization for RetinaNet](https://github.com/martinzlocha/anchor-optimization/). From here and applying some algorithmic post-processing to the predicted bounding boxes, we achieve a 99.99% mean average precission (mAP) and 83.31% average intersection over union (IOU)
+For this task, we used [fizyr's implementation of RetinaNet](https://github.com/fizyr/keras-retinanet) and [martinzlocha's anchor optimization for RetinaNet](https://github.com/martinzlocha/anchor-optimization/). From here and applying some algorithmic post-processing to the predicted bounding boxes, we achieve a 97.25% mean average precission (mAP) and 81.75% average intersection over union (IOU)
 ##### Examples
 Here we show some examples of the bounding box inferred by the detector (red) against the ground truth (green)
 ![Example1](/examples/detections/ex1.png)
