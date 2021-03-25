@@ -22,15 +22,15 @@ You can download the data from [here](https://drive.google.com/file/d/15vnCd0pTI
 As some of the original images are two big, another lighter preprocessed version of the images is provided. In this lighter version of the dataset, all images have been standarized by adding black borders to make all of them squared and then resized to a common size of 512x512px. Of course, the ground truth has been adjusted accordingly. You can download it [here](https://drive.google.com/file/d/1HTX2dD-RGeqVaYgLfnqykPJ9HsUv3ZaM/view?usp=sharing)
 
 ## Examples
-![Example1](/examples/imgs/ex1.jpg =250x)
-![Example2](/examples/imgs/ex2.jpg =250x)
-![Example3](/examples/imgs/ex3.jpg =250x)
+![Example1](/examples/imgs/ex1.jpg)
+![Example2](/examples/imgs/ex2.jpg)
+![Example3](/examples/imgs/ex3.jpg)
 
 ## Detection task
 For this task, we used [fizyr's implementation of RetinaNet](https://github.com/fizyr/keras-retinanet) and [martinzlocha's anchor optimization for RetinaNet](https://github.com/martinzlocha/anchor-optimization/). From here and applying some algorithmic post-processing to the predicted bounding boxes, we achieve a 99.99% mean average precission (mAP) and 83.31% average intersection over union (IOU)
 ##### Examples
 Here we show some examples of the bounding box inferred by the detector (red) against the ground truth (green)
-![Example1](/examples/detections/ex1.png =250x)
-![Example2](/examples/detections/ex2.png =250x)
-![Example3](/examples/detections/ex3.png =250x)
+![Example1](/examples/detections/ex1.png)
+![Example2](/examples/detections/ex2.png)
+![Example3](/examples/detections/ex3.png)
 
