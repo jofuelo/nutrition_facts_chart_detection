@@ -2,13 +2,13 @@
 This GitHub contains a small dataset for the task of detecting the position of the nutritional facts chart of a product in an image.
 
 ## Dataset description
-##### Size: 
+#### Size: 
 This dataset contains **400** images.
-##### Data description:
+#### Data description:
 The images are natural close-up photographs of one side of food products with the nutritional facts box clearly visible.
 Most of them are of spanish products.
 Only 1 class is considered, which is `nutritional_facts_chart`
-##### Data partition:
+#### Data partition:
 This dataset is divided into **90%** of the images (360) as the training set and **10%** (40) as the test set.
 
 ## Ground truth description
@@ -28,7 +28,7 @@ As some of the original images are two big, another lighter preprocessed version
 
 ## Detection task
 For this task, we used [fizyr's implementation of RetinaNet](https://github.com/fizyr/keras-retinanet) and [martinzlocha's anchor optimization for RetinaNet](https://github.com/martinzlocha/anchor-optimization/). From here and applying some algorithmic post-processing to the predicted bounding boxes, we achieve a 99.99% mean average precission (mAP) and 83.31% average intersection over union (IOU). This mAP is calculated with an IOU threshold of 0.5.
-##### Examples
+#### Examples
 Here we show some examples of the bounding box inferred by the detector (red) against the ground truth (green)
 ![Example1](/examples/detections/ex1.png)
 ![Example2](/examples/detections/ex2.png)
